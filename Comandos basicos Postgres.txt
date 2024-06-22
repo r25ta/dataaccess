@@ -1,0 +1,19 @@
+Comandos basicos Postgres na linha de comando LINUX
+
+1- Conectar no Postgres 
+$ psql -h localhost -p 5432 -U postgres
+
+2- Listar os bancos de dados disponiveis
+$ \l
+
+3- Criar um novo banco de dados
+$ create database <<nome do banco de dados>>;
+Exemplo: $ create database recordings
+
+4- Conectar em uma base de dados
+$ \c <<nome do banco de dados>>
+Exemplo: $ \c recordings
+
+5- Executar Script na linha de comando
+$ \i /root/test.sql
+
